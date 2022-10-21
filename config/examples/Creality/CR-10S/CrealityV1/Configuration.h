@@ -113,7 +113,7 @@
  *
  * :[2400, 9600, 19200, 38400, 57600, 115200, 250000, 500000, 1000000]
  */
-#define BAUDRATE 115200
+#define BAUDRATE 250000       //MUCHTALL - Running this on a RPi4 //#define BAUDRATE 115200
 
 //#define BAUD_RATE_GCODE     // Enable G-code M575 to set the baud rate
 
@@ -611,7 +611,7 @@
 // Above this temperature the heater will be switched off.
 // This can protect components from overheating, but NOT from shorts and failures.
 // (Use MINTEMP for thermistor short/failure protection.)
-#define HEATER_0_MAXTEMP 250
+#define HEATER_0_MAXTEMP 335	//MUCHTALL - Using a bi-metal heatbreak and a glass-encased thermistor capable of ~350C //#define HEATER_0_MAXTEMP 250
 #define HEATER_1_MAXTEMP 275
 #define HEATER_2_MAXTEMP 275
 #define HEATER_3_MAXTEMP 275
@@ -659,9 +659,9 @@
     #define DEFAULT_Ki_LIST {   1.08,   1.08 }
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
-    #define DEFAULT_Kp  22.20
-    #define DEFAULT_Ki   1.08
-    #define DEFAULT_Kd 114.00
+    #define DEFAULT_Kp 17.46 //MUCHTALL - Creality CR10-S w/Silicone Sock //#define DEFAULT_Kp  22.20
+    #define DEFAULT_Ki 1.30  //MUCHTALL - Creality CR10-S w/Silicone Sock //#define DEFAULT_Ki   1.08
+    #define DEFAULT_Kd 58.65 //MUCHTALL - Creality CR10-S w/Silicone Sock //#define DEFAULT_Kd 114.00
   #endif
 #endif
 
@@ -2204,14 +2204,14 @@
 // Preheat Constants - Up to 6 are supported without changes
 //
 #define PREHEAT_1_LABEL       "PLA"
-#define PREHEAT_1_TEMP_HOTEND 205
+#define PREHEAT_1_TEMP_HOTEND 210     //MUCHTALL #define PREHEAT_1_TEMP_HOTEND 205
 #define PREHEAT_1_TEMP_BED     60
 #define PREHEAT_1_TEMP_CHAMBER 35
 #define PREHEAT_1_FAN_SPEED     0 // Value from 0 to 255
 
-#define PREHEAT_2_LABEL       "ABS"
-#define PREHEAT_2_TEMP_HOTEND 250
-#define PREHEAT_2_TEMP_BED    80
+#define PREHEAT_2_LABEL       "PETG"	//MUCHTALL - I like to print PETG over ABS //#define PREHEAT_2_LABEL       "ABS"
+#define PREHEAT_2_TEMP_HOTEND 245	    //MUCHTALL - I like to print PETG over ABS //#define PREHEAT_2_TEMP_HOTEND 250
+#define PREHEAT_2_TEMP_BED    60	    //MUCHTALL - I like to print PETG over ABS //#define PREHEAT_2_TEMP_BED    80
 #define PREHEAT_2_TEMP_CHAMBER 35
 #define PREHEAT_2_FAN_SPEED     0 // Value from 0 to 255
 
