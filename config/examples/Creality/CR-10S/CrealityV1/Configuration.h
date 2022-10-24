@@ -62,7 +62,7 @@
 // @section info
 
 // Author info of this build printed to the host during boot and M115
-#define STRING_CONFIG_H_AUTHOR "(MuchTall-v202210241606CDT, CR-10S)" // MUCHTALL - Custom version identification //#define STRING_CONFIG_H_AUTHOR "(printedsolid.com, CR-10S)" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "(MuchTall-v202210241645CDT, CR-10S)" // MUCHTALL - Custom version identification //#define STRING_CONFIG_H_AUTHOR "(printedsolid.com, CR-10S)" // Who made the changes.
 //#define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
 
 /**
@@ -659,9 +659,9 @@
     #define DEFAULT_Ki_LIST {   1.08,   1.08 }
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
-    #define DEFAULT_Kp 17.46 //MUCHTALL - Creality CR10-S w/Silicone Sock //#define DEFAULT_Kp  22.20
-    #define DEFAULT_Ki 1.30  //MUCHTALL - Creality CR10-S w/Silicone Sock //#define DEFAULT_Ki   1.08
-    #define DEFAULT_Kd 58.65 //MUCHTALL - Creality CR10-S w/Silicone Sock //#define DEFAULT_Kd 114.00
+    #define DEFAULT_Kp 8.79   // MUCHTALL - Creality CR10-S w/Silicone sock, bi-metal heatbreak, and voltage bumped PSU //#define DEFAULT_Kp  22.20
+    #define DEFAULT_Ki 0.54   // MUCHTALL - Creality CR10-S w/Silicone sock, bi-metal heatbreak, and voltage bumped PSU //#define DEFAULT_Ki   1.08
+    #define DEFAULT_Kd 35.63  // MUCHTALL - Creality CR10-S w/Silicone sock, bi-metal heatbreak, and voltage bumped PSU //#define DEFAULT_Kd 114.00
   #endif
 #endif
 
