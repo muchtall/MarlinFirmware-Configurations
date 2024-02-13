@@ -299,7 +299,7 @@
  */
 #if ENABLED(THERMAL_PROTECTION_HOTENDS)
   #define THERMAL_PROTECTION_PERIOD 40        // (seconds)
-  #define THERMAL_PROTECTION_HYSTERESIS 10    // (°C)		//MUCHTALL - Temps seems to sway as much as 7°C during warm-up with the bi-metal heatbreak //#define THERMAL_PROTECTION_HYSTERESIS 4     // (°C)
+  #define THERMAL_PROTECTION_HYSTERESIS 15    // (°C)		//MUCHTALL - Temps seems to sway as much as 15°C during warm-up with the bi-metal heatbreak //#define THERMAL_PROTECTION_HYSTERESIS 4     // (°C)
 
   //#define ADAPTIVE_FAN_SLOWING              // Slow part cooling fan if temperature drops
   #if BOTH(ADAPTIVE_FAN_SLOWING, PIDTEMP)
