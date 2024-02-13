@@ -686,9 +686,9 @@
     #define DEFAULT_Ki_LIST {   1.08,   1.08 }
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
-    #define DEFAULT_Kp 8.79   // MUCHTALL - Creality CR10-S w/Silicone sock, bi-metal heatbreak, and voltage bumped PSU //#define DEFAULT_Kp  22.20
-    #define DEFAULT_Ki 0.54   // MUCHTALL - Creality CR10-S w/Silicone sock, bi-metal heatbreak, and voltage bumped PSU //#define DEFAULT_Ki   1.08
-    #define DEFAULT_Kd 35.63  // MUCHTALL - Creality CR10-S w/Silicone sock, bi-metal heatbreak, and voltage bumped PSU //#define DEFAULT_Kd 114.00
+    #define DEFAULT_Kp 16.67  // MUCHTALL - Creality CR10-S w/Silicone sock, bi-metal heatbreak, and voltage bumped PSU (via: M303 E0 C8 S250) //#define DEFAULT_Kp  22.20
+    #define DEFAULT_Ki 0.94   // MUCHTALL - Creality CR10-S w/Silicone sock, bi-metal heatbreak, and voltage bumped PSU (via: M303 E0 C8 S250) //#define DEFAULT_Ki   1.08
+    #define DEFAULT_Kd 73.72  // MUCHTALL - Creality CR10-S w/Silicone sock, bi-metal heatbreak, and voltage bumped PSU (via: M303 E0 C8 S250) //#define DEFAULT_Kd 114.00
   #endif
 #else
   #define BANG_MAX 255    // Limit hotend current while in bang-bang mode; 255=full current
