@@ -63,7 +63,7 @@
 // @section info
 
 // Author info of this build printed to the host during boot and M115
-#define STRING_CONFIG_H_AUTHOR "(MuchTall-v20240213132002, CR-10S)" // MUCHTALL - Custom version identification //#define STRING_CONFIG_H_AUTHOR "(printedsolid.com, CR-10S)" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "(MuchTall-v20240213133834, CR-10S)" // MUCHTALL - Custom version identification //#define STRING_CONFIG_H_AUTHOR "(printedsolid.com, CR-10S)" // Who made the changes.
 //#define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
 
 /**
@@ -686,9 +686,9 @@
     #define DEFAULT_Ki_LIST {   1.08,   1.08 }
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
-    #define DEFAULT_Kp 16.51  // MUCHTALL - Creality CR10-S w/Silicone sock, bi-metal heatbreak, and voltage bumped PSU (via: M303 E0 C8 S250) //#define DEFAULT_Kp  22.20
-    #define DEFAULT_Ki 0.94   // MUCHTALL - Creality CR10-S w/Silicone sock, bi-metal heatbreak, and voltage bumped PSU (via: M303 E0 C8 S250) //#define DEFAULT_Ki   1.08
-    #define DEFAULT_Kd 72.72  // MUCHTALL - Creality CR10-S w/Silicone sock, bi-metal heatbreak, and voltage bumped PSU (via: M303 E0 C8 S250) //#define DEFAULT_Kd 114.00
+    #define DEFAULT_Kp 15.23  // MUCHTALL - Creality CR10-S w/Silicone sock, bi-metal heatbreak, and voltage bumped PSU (via: M303 E0 C8 S250) //#define DEFAULT_Kp  22.20
+    #define DEFAULT_Ki 0.86   // MUCHTALL - Creality CR10-S w/Silicone sock, bi-metal heatbreak, and voltage bumped PSU (via: M303 E0 C8 S250) //#define DEFAULT_Ki   1.08
+    #define DEFAULT_Kd 67.35  // MUCHTALL - Creality CR10-S w/Silicone sock, bi-metal heatbreak, and voltage bumped PSU (via: M303 E0 C8 S250) //#define DEFAULT_Kd 114.00
   #endif
 #else
   #define BANG_MAX 255    // Limit hotend current while in bang-bang mode; 255=full current
